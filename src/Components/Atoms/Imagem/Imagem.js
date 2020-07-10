@@ -5,7 +5,7 @@ import "./Imagem.css";
 const Imagem = (props) =>{
     return(
         <>
-        <div className="container">
+        <div className={props.classImagem}>
             <img className="imagem_placa" src={props.imagemSrc}></img>
         </div>
         </>

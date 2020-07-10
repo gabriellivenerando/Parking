@@ -1,0 +1,12 @@
+.paragrafo_container{
+    display:flex;
+    width: 911px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.instrucao_imagens{
+    display:flex;
+    width: 745px;
+    margin: 50px auto auto auto;
+}

@@ -15,7 +15,7 @@ class PrincipalContent extends React.Component{
         return(
             <>
             <Imagem
-                
+                classImagem="container"
                 imagemSrc={Placa}
             />
             <Titulo

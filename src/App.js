@@ -1,10 +1,10 @@
 import React from 'react';
-import Principal from "../src/Paginas/Principal/Principal"
+import Introducao from "../src/Paginas/Introducao/Introducao";
 import './App.css';
 
 function App() {
   return (
-      <Principal/>
+      <Introducao/>
   );
 }
 
