@@ -1,0 +1,9 @@
+
+.titulo_principal{
+    text-align: center;
+    padding: 20px;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #34ABE0;
+    text-shadow: 5px 5px #696969;
+}

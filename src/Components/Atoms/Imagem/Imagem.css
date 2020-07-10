@@ -1,0 +1,10 @@
+.container{
+    width: 315px;
+    margin: 90px auto auto auto;
+}
+
+
+.imagem_placa{
+    max-width: 300px;
+    width: 100%;
+}

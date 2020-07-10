@@ -1,0 +1,22 @@
+
+
+
+
+
+.button_container{
+    width: 200px;
+    margin: auto;
+
+}
+
+
+.button_principal{
+    padding: 10px;
+    text-transform: uppercase;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 19px;
+    background-color: #227D5A;
+    color: #FFFF;
+    box-shadow: 2px 2px #696969;
+}
