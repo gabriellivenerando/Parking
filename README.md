@@ -3,7 +3,8 @@
 
 ### Descrição do Projeto :open_file_folder:
 
-<p align="justify"> Projeto final do Bootcamp {Reprograma} </p>
+<p align="justify"> Projeto final para Bootcamp {Reprograma}. </p>
+
 
 
 
