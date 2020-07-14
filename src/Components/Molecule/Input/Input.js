@@ -3,7 +3,7 @@ import "./Input.css";
 
 const Input = () =>{
     return(
-        <div>
+        <div className="container_input">
             <input/>
         </div>
     )

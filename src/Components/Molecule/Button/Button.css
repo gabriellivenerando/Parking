@@ -4,7 +4,7 @@
 
 
 .button_container{
-    width: 200px;
+    width: 337px;
     margin: auto;
 
 }
@@ -17,6 +17,18 @@
     font-size: 20px;
     border-radius: 19px;
     background-color: #227D5A;
+    color: #FFFF;
+    box-shadow: 2px 2px #696969;
+}
+
+
+.button_introducao{
+    padding: 15px;
+    text-transform: uppercase;
+    width: 336px;
+    font-size: 20px;
+    border-radius: 19px;
+    background-color: #4BC999;
     color: #FFFF;
     box-shadow: 2px 2px #696969;
 }

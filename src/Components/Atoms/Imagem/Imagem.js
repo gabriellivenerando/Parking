@@ -6,7 +6,7 @@ const Imagem = (props) =>{
     return(
         <>
         <div className={props.classImagem}>
-            <img className="imagem_placa" src={props.imagemSrc}></img>
+            <img className={props.imagemIntroducao} src={props.imagemSrc}></img>
         </div>
         </>
     )

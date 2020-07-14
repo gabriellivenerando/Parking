@@ -7,6 +7,29 @@
 
 .instrucao_imagens{
     display:flex;
-    width: 745px;
+    width: 816px;
     margin: 50px auto auto auto;
+}
+
+.estacionamento_container{
+    margin-top: 23px;
+}
+
+.imagem_carroLaranja{
+    max-width: 80px;
+}
+
+.imagem_placa{
+    max-width: 300px;
+    width: 100%;
+}
+
+.container_imagemCarro{
+    width: 318px;
+}
+
+.container_imagemCarro > div{
+    margin: auto;
+    width: 90px;
+    margin-top: 23px;
 }

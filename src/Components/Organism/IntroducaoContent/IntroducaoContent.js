@@ -7,6 +7,7 @@ import Input from "../../Molecule/Input/Input";
 import Button from "../../Molecule/Button/Button";
 
 import Estacionamento from "../../../imagens/estacionamento.png";
+import CarroLaranja from "../../../imagens/carroLaranja.svg";
 
 
 
@@ -14,6 +15,7 @@ class IntroducaoContent extends React.Component {
     render() {
         return (
             <>  <Titulo
+                tituloClass="titulo_Introducao"
                 titulo="Car Parking"
             />
                 <section className="paragrafo_container">
@@ -34,27 +36,39 @@ class IntroducaoContent extends React.Component {
                         />
                         <Imagem
                             classImagem="estacionamento_container"
+                            imagemIntroducao="imagem_placa"
                             imagemSrc={Estacionamento}
                         />
                     </div>
 
                     <div>
                         <Titulo
-                            titulo="Estacionamento"
+                            titulo="Carro"
                         />
                         <Paragrafo
-                            texto="Representa a  <div>  mãe do nosso código"
+                            texto="Representa uma <div> filha do nosso código"
                         />
+
+                        <div className="container_imagemCarro">
                         <Imagem
+                            
                             classImagem="estacionamento_container"
-                            imagemSrc={Estacionamento}
+                            imagemIntroducao="imagem_carroLaranja"
+                            imagemSrc={CarroLaranja}
                         />
+
+                        </div>
                     </div>
                 </section>
 
                 <Imagem />
+
+                <p>Qual nome você gostaria de colocar no seu ticket de estacionamento?</p>
                 <Input />
-                <Button />
+                <Button
+                    classButton="button_introducao"
+                    nomeDoButton="Começar a estacionar"
+                />
             </>
         )
     }
