@@ -1,10 +1,17 @@
 .container_input{
     text-align: center;
-    margin: 10px 40px 40px 40px;
+    margin: 10px 40px 15px 40px;
 }
 
 .container_input > input{
     padding: 4px;
     width: 224px;
     height: 23px;
+    color:red;
+}
+
+.IntroducaoContent_texto{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }

@@ -1,10 +1,13 @@
 import React from 'react';
-import Introducao from "../src/Paginas/Introducao/Introducao";
+import Jogo from "../src/Paginas/Jogo/Jogo"
 import './App.css';
 
 function App() {
   return (
-      <Introducao/>
+    <>
+      <Jogo/>
+      <h1>Oi</h1>
+    </>
   );
 }
 
