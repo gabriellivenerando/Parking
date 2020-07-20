@@ -1,11 +1,12 @@
 import React from 'react';
-import Jogo from "../src/Paginas/Jogo/Jogo"
+// import Jogo from "../src/Paginas/Jogo/Jogo"
+import Routes from "../src/Routes/Routes"
 import './App.css';
 
 function App() {
   return (
     <>
-    <Jogo/>
+    <Routes/>
       
     </>
   );

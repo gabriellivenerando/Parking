@@ -1,12 +1,16 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./Button.css";
 
 
 const Button = (props)=>{
     return(
         <div className="button_container">
-            <button className={props.classButton}><a href={props.link}>{props.nomeDoButton}</a></button>
-        </div>
+             <Link to={props.path}>
+                <button className={props.classButton}>{props.nomeDoButton}</button>
+            </Link>
+
+            </div>
     )
 }
 

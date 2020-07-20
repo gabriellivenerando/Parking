@@ -67,6 +67,7 @@ class IntroducaoContent extends React.Component {
                 <Input />
                 <Button
                     classButton="button_introducao"
+                    path="/jogo"
                     nomeDoButton="Começar a estacionar"
                 />
             </>

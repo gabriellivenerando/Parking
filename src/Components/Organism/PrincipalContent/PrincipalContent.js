@@ -24,6 +24,7 @@ class PrincipalContent extends React.Component{
             />
             <Button
                 classButton="button_principal"
+                path="/introducao"
                 nomeDoButton="Entrar"
             />
             </>
