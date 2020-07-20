@@ -1,0 +1,19 @@
+.points_container{
+    display:flex;
+    justify-content: end;
+    width: 951px;
+    margin: 58px auto 50px auto
+}
+
+
+.coins_container{
+    width: 62px;
+    height: 61px;
+}
+
+.points{
+    width: 100px;
+    height: 43px;
+    margin-top: 8px;
+    background-color: #FFFF;
+}

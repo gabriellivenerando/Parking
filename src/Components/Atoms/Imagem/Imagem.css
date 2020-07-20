@@ -3,3 +3,16 @@
     margin: 90px auto auto auto;
 }
 
+.JogoImagem_container{
+    width: 600px;
+    margin: auto;
+}
+
+.JogoImagem{
+    width: 100%;
+    max-width: 600px;
+}
+
+.coins_container{
+
+}

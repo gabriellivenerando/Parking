@@ -5,8 +5,8 @@ import './App.css';
 function App() {
   return (
     <>
-      <Jogo/>
-      <h1>Oi</h1>
+    <Jogo/>
+      
     </>
   );
 }
