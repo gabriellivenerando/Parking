@@ -5,7 +5,7 @@ import Principal from "../../src/Paginas/Principal/Principal";
 import Introducao from "../../src/Paginas/Introducao/Introducao";
 import Jogo from "../../src/Paginas/Jogo/Jogo"
 
-function Routes() {
+const Routes = () => {
   return (
     <BrowserRouter>
     <Switch>

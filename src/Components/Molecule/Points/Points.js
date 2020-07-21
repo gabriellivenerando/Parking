@@ -5,8 +5,9 @@ import Coins from "../../../imagens/coins.png"
 
 
 
-const Points = () =>{
-    return(
+class Points extends React.Component{
+    render(){
+        return(
         <div className="points_container">
             <Imagem
                 classImagem="coins_container"
@@ -14,10 +15,11 @@ const Points = () =>{
                 imagemSrc={Coins}
             />
             <div className="points">
-
+                <p>{this.props.teste}</p>
             </div>
         </div>
-    )
+        )
+    }
 }
 
 export default Points;
