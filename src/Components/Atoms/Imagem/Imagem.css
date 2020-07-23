@@ -18,11 +18,11 @@
 }
 
 .placa_imagem{
-    width: 205px;
+    width: 250px;
     margin: 100px auto auto auto;
 }
 
 .placa_imagem > img{
-    max-width: 200px;
+    max-width: 298px;
     width: 100%;
 }

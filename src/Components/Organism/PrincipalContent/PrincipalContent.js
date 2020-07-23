@@ -19,7 +19,7 @@ class PrincipalContent extends React.Component{
                 imagemSrc={Placa}
             />
             <Titulo
-                titulo_class="titulo_principal"
+                tituloClass="titulo_principal"
                 titulo="Car Parking"
             />
             <Button
