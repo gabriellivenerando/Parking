@@ -4,7 +4,7 @@ import "./Paragrafo.css";
 
 const Paragrafo = (props) =>{
     return(
-            <p className="paragrafo_texto">{props.texto}</p>
+            <p className={props.paragrafoTexto}>{props.texto}</p>
     )
         
 }

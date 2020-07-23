@@ -64,7 +64,10 @@ class IntroducaoContent extends React.Component {
 
                     <Imagem />
 
-                    <p className="IntroducaoContent_texto">Qual nome você gostaria de colocar no seu ticket de estacionamento?</p>
+                    <Paragrafo 
+                    paragrafoTexto="introducaoContent_texto"
+                    texto="Qual nome você gostaria de colocar no seu ticket de estacionamento?"
+                    />
                     <Input />
                     <Button
                         classButton="button_introducao"

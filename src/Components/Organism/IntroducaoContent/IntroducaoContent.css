@@ -8,7 +8,7 @@
 .instrucao_imagens{
     display:flex;
     justify-content: space-between;
-    width: 50%;
+    width: 88%;
     margin: 50px auto 40px auto;
 }
 
@@ -48,6 +48,8 @@
     margin-top: 23px;
 }
 
+
+
 @media  screen and (max-width: 950px) {
     .paragrafo_container{
         flex-direction: column;
@@ -63,23 +65,13 @@
 
     .instrucao_imagens{
         flex-direction: column;
-        /* width: 34%; */
+        /* width: 80%; */
     }
 
-   
+    .presentationParking_container{
+        width: auto auto 50px auto;
+    }
+
+    
 
 }
-/* 
-@media  screen and (max-width: 500px) {
-    .paragrafo_container{
-        
-        width: 370px;
-        height: 523px;
-    }
-    
-    .paragrafo_container > p{
-        width: 293px;
-        
-    }
-
-} */

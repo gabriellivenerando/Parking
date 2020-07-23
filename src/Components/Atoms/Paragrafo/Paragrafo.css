@@ -1,6 +1,7 @@
 
-.paragrafo_texto{
-    text-align: justify;
-    width: 440px;
+.introducaoContent_texto{
+    text-align: center;
+    width: 60%;
     height: auto;
+    margin: auto;
 }
