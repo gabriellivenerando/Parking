@@ -1,6 +1,8 @@
 import React from "react";
 import "./Imagem.css";
 
+import teste from "../../../imagens/end.png"
+
 
 const Imagem = (props) =>{
     return(

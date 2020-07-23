@@ -6,3 +6,13 @@ section{
     display: flex;
 }
 
+.game_container{
+    margin-bottom: 50px;
+}
+
+
+
+.wrongAnswer, .rightAnswer{
+    opacity: 0.4
+}
+

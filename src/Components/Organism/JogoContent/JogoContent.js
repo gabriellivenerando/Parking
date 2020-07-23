@@ -3,73 +3,87 @@ import "./JogoContent.css";
 import Points from "../../Molecule/Points/Points";
 import Titulo from "../../Atoms/Titulo/Titulo";
 import Imagem from "../../Atoms/Imagem/Imagem";
+import Button from "../../Molecule/Button/Button"
+import ImagemCarRoundTwo from "../../Atoms/ImagemCarRoundTwo/ImagemCarRoundTwo"
 
 
-import JCCenter from "../../../imagens/jc-center-right.png";
-import JCSB from "../../../imagens/jc-space-between-right.png";
-import JCCenterRight from "../../../imagens/jc-center-right-right.png";
-import JCCenterWrong from "../../../imagens/jc-center-right-wrong.png";
 
-
+import Image from "../../../data/dataImage"
 
 class JogoContent extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            answer: "",
-            img1: JCCenter,
-            img2: JCSB,
+           
+            Center: Image[0].center,
+            SpaceB: Image[1].spaceB,
+            // FlexStart: Image[2].start,
+            FlexEnd: Image[3].end,
+            styleRight:'JogoImagem_container',
+            styleWrong:'JogoImagem_container',
             counter: 0
         };
     }
 
 
-right = () => {
-    this.setState(() => {return { img1: JCCenterRight }});
-    this.setState({counter: this.state.counter  + 1});
+
+    right = () =>{
+        this.setState({ Center: Image[0].centerRight });
+        this.setState({counter: this.state.counter  + 1});
+        this.setState({styleWrong: 'wrongAnswer'})
+    }
     
-    
-};
+    wrong = () =>{
+        this.setState({ SpaceB: Image[1].spaceBWrong });
+        this.setState({styleRight: 'rightAnswer'})
+        
+    }
 
-wrong = () => {
-    this.setState(() => {return { img2: JCCenterWrong }});
-    this.setState({counter: this.state.counter  - 1});
-};
+    newImage(){
+
+    }
 
 
 
+    render() {
 
-render() {
-    return (
-        <div>
-            <Points 
-            teste = {this.state.counter}
-            />
-            <Titulo
-                titulo="Estacione os carros nas vagas disponíveis com justify-content: center"
-                tituloClass="tituloJogo"
-            />
-            <section>
-                <Imagem
-                    classImagem="JogoImagem_container"
-                    imagemIntroducao="JogoImagem"
-                    imagemSrc={this.state.img2}
-                    click={this.wrong}
+
+            
+        return (
+            <div>
+                <Points
+                    teste={this.state.counter}
                 />
+                <Titulo
+                    titulo="Estacione os carros nas vagas disponíveis com justify-content: center"
+                    tituloClass="tituloJogo"
+                />
+                <section className="game_container">
+                    <Imagem
+                     
+                        classImagem={this.state.styleWrong}
+                        imagemIntroducao="JogoImagem"
+                        imagemSrc={this.state.SpaceB}
+                        click={this.wrong}
+                    />
 
-                <Imagem
-                    classImagem="JogoImagem_container"
+                    <Imagem
+                    classImagem={this.state.styleRight}
                     imagemIntroducao="JogoImagem"
-                    imagemSrc={this.state.img1}
-
+                    imagemSrc={this.state.Center}
                     click={this.right}
+                    />
+                </section>
+                <Button
+                    classButton="button_introducao"
+                    path='/roundtwo'
+                    nomeDoButton="Próxima imagem"
                 />
-            </section>
 
-        </div>
-    );
-}
+            </div>
+        );
+    }
 }
 
 export default JogoContent;
