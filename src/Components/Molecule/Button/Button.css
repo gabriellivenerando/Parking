@@ -1,8 +1,5 @@
 
 
-
-
-
 .button_container{
     width: 255px;
     margin: auto;
@@ -13,12 +10,13 @@
 .button_principal{
     padding: 10px;
     text-transform: uppercase;
-    width: 254px;
-    font-size: 20px;
+    width: 277px;
+    font-size: 26px;
     border-radius: 19px;
     background-color: #227D5A;
     color: #FFFF;
-    box-shadow: 2px 2px #696969;
+    box-shadow: 2px 2px #171717;
+    font-weight: bold;
 }
 
 
