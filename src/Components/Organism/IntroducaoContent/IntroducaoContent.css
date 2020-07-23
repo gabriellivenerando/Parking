@@ -7,12 +7,25 @@
 
 .instrucao_imagens{
     display:flex;
-    width: 816px;
+    justify-content: space-between;
+    width: 50%;
     margin: 50px auto auto auto;
 }
 
+.presentationParking_container{
+    width: 305px;
+    margin: auto;
+
+}
+
+.presentationCar_container{
+    width: 317px;
+    margin: auto;
+}
+
 .estacionamento_container{
-    margin-top: 23px;
+    margin: 23px auto auto auto;
+    width: 300px;
 }
 
 .imagem_carroLaranja{
@@ -25,7 +38,8 @@
 }
 
 .container_imagemCarro{
-    width: 318px;
+    width: 100px;
+    margin: auto;
 }
 
 .container_imagemCarro > div{
@@ -44,12 +58,15 @@
         line-height: 26px;
         margin-bottom: 17px;
         width: 100%;
+        font-size: 22px;
     }
 
     .instrucao_imagens{
         flex-direction: column;
-        width: 34%;
+        /* width: 34%; */
     }
+
+   
 
 }
 /* 

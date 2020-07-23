@@ -14,10 +14,11 @@ import CarroLaranja from "../../../imagens/carroLaranja.svg";
 class IntroducaoContent extends React.Component {
     render() {
         return (
-            <>  <Titulo
+            <>  
+                <Titulo
                 tituloClass="titulo_Introducao"
                 titulo="Car Parking"
-            />
+                />
                 <section className="paragrafo_container">
                     <Paragrafo
                         texto="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with"
@@ -27,7 +28,7 @@ class IntroducaoContent extends React.Component {
                     />
                 </section>
                 <section className="instrucao_imagens">
-                    <div>
+                    <div className="presentationParking_container">
                         <Titulo
                             titulo="Estacionamento"
                         />
@@ -41,7 +42,7 @@ class IntroducaoContent extends React.Component {
                         />
                     </div>
 
-                    <div>
+                    <div className="presentationCar_container">
                         <Titulo
                             titulo="Carro"
                         />
@@ -50,26 +51,26 @@ class IntroducaoContent extends React.Component {
                         />
 
                         <div className="container_imagemCarro">
-                        <Imagem
-                            
-                            classImagem="estacionamento_container"
-                            imagemIntroducao="imagem_carroLaranja"
-                            imagemSrc={CarroLaranja}
-                        />
+                            <Imagem
 
+                                classImagem="estacionamento_container"
+                                imagemIntroducao="imagem_carroLaranja"
+                                imagemSrc={CarroLaranja}
+                            />
                         </div>
                     </div>
+
                 </section>
 
-                <Imagem />
+                    <Imagem />
 
-                <p className="IntroducaoContent_texto">Qual nome você gostaria de colocar no seu ticket de estacionamento?</p>
-                <Input />
-                <Button
-                    classButton="button_introducao"
-                    path="/jogo"
-                    nomeDoButton="Começar a estacionar"
-                />
+                    <p className="IntroducaoContent_texto">Qual nome você gostaria de colocar no seu ticket de estacionamento?</p>
+                    <Input />
+                    <Button
+                        classButton="button_introducao"
+                        path="/jogo"
+                        nomeDoButton="Começar a estacionar"
+                    />
             </>
         )
     }
