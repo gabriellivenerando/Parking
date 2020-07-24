@@ -1,8 +1,15 @@
 .paragrafo_container{
     display:flex;
-    width: 911px;
+    width: 863px;
     margin: auto;
     justify-content: space-between;
+}
+
+
+
+.paragrafoTexto_introducao{
+    text-align: justify;
+    width: 421px;
 }
 
 .instrucao_imagens{
@@ -19,7 +26,7 @@
 }
 
 .presentationCar_container{
-    width: 317px;
+    width: 318px;
     margin: auto;
 }
 
@@ -56,11 +63,12 @@
         width: 75%;
     }
     
-    .paragrafo_container > p{
+    .paragrafoTexto_introducao{
         line-height: 26px;
         margin-bottom: 17px;
         width: 100%;
         font-size: 22px;
+        text-align: justify;
     }
 
     .instrucao_imagens{

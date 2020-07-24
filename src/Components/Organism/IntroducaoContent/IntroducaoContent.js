@@ -21,10 +21,12 @@ class IntroducaoContent extends React.Component {
                 />
                 <section className="paragrafo_container">
                     <Paragrafo
-                        texto="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with"
+                        paragrafoTexto="paragrafoTexto_introducao"
+                        texto=" O flexbox, foi projetado tanto como um modelo de layout unidimensional quanto como um método capaz de organizar espacialmente os elementos em uma interface, além de possuir capacidades avançadas de alinhamento."
                     />
                     <Paragrafo
-                        texto="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with"
+                        paragrafoTexto="paragrafoTexto_introducao"
+                        texto="A propriedade justify-content é empregada para alinhar os elementos ao longo do eixo principal, cuja direção é definida a partir da propriedade flex-direction. Aqui, vamos praticar um pouco da propriedade justify-content"
                     />
                 </section>
                 <section className="instrucao_imagens">
@@ -63,12 +65,7 @@ class IntroducaoContent extends React.Component {
                 </section>
 
                     <Imagem />
-
-                    <Paragrafo 
-                    paragrafoTexto="introducaoContent_texto"
-                    texto="Qual nome você gostaria de colocar no seu ticket de estacionamento?"
-                    />
-                    <Input />
+                    
                     <Button
                         classButton="button_introducao"
                         path="/jogo"

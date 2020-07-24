@@ -14,102 +14,103 @@ class JogoContent extends React.Component {
 
     this.state = {
 
-    //   ImageRight: '',
-    //   ImageLeft: '',
-      CorrectImage: '',
-      WrongImage: '',
-      styleRight: '',
-      styleWrong: '',
+      ImageRight: '',
+      ImageLeft: '',
+
+      ImageStart: Image[0].start.default,
+      ImageEnd: Image[0].end.default,
+      ImageSpaceBetween: Image[0].spaceBetween.default,
+      ImageCenter: Image[0].center.default,
+
+      styleCorrectImage: '',
+      styleWrongImage: '',
+      changeDisplay: '',
+
       counter: 0,
       testeDeEstado: 1,
       page: 1,
       teste: 1,
       teste2: 1,
-      ImageStart: Image[0].start.default,
-      ImageEnd: Image[0].end.default,
-      ImageSpaceBetween: Image[0].spaceBetween.default,
-      ImageCenter: Image[0].center.default,
-    //   ImageStartCorrect: Image[0]
-      
+
+
     }
   }
 
-//   componentDidMount() {
-//     this.setState({
-//       ImageRight: Image[0].center.default,
-//       ImageLeft: Image[0].spaceBetween.default,
-//     });
-//   }
+  componentDidMount() {
+    this.setState({
+      ImageRight: Image[0].center.default,
+      ImageLeft: Image[0].spaceBetween.default,
+    });
+  }
 
   correct = () => {
-   
-    this.setState({ teste: this.state.teste+ 1 });
-    
-    this.setState({ counter: this.state.counter + 1 });
-    console.log({ teste: this.state.teste })
-    switch (this.state.teste) {
-        case 1:
-            this.setState({ ImageRight: Image[0].center.correct });
-            this.setState({ styleWrong: "wrongAnswer"});
-            break;
-            case 2:
-            this.setState({ ImageStart: Image[0].start.correct });
-            this.setState({ styleWrong: "wrongAnswer"});
-            break;
-          case 3:
-            this.setState({ ImageRight: Image[0].spaceBetween.correct });
-            break;
-          case 4:
-            break;
-          default:
-            break;
-        }
 
-    
+    this.setState({ teste: this.state.teste + 1 });
+
+    this.setState({ counter: this.state.counter + 1 });
+
+    switch (this.state.teste) {
+      case 1:
+        this.setState({ ImageRight: Image[0].center.correct })
+        this.setState({ styleWrongImage: "wrongAnswer" })
+        break;
+      case 2:
+        this.setState({ ImageStart: Image[0].start.correct })
+        this.setState({ styleWrongImage: "wrongAnswer" })
+        break;
+      case 3:
+        this.setState({ ImageSpaceBetween: Image[0].spaceBetween.correct })
+        this.setState({ styleWrongImage: "wrongAnswer" })
+        break;
+
+      default:
+        break;
+    }
+
+
   };
 
   wrong = () => {
-    this.setState({ ImageLeft: Image[0].spaceBetween.wrong });
-    this.setState({ styleRight: "rightAnswer" });
-    alert({ teste: this.state.teste})
-    this.setState({ teste: this.state.teste+ 2 });
+    console.log("oi", { teste: this.state.teste2 })
+    this.setState({ teste2: this.state.teste2 + 1 });
+
     switch (this.state.teste2) {
-        case 1:
-            this.setState({ ImageLeft: Image[0].spaceBetween.wrong });
-            this.setState({ styleRight: "rightAnswer"});
-            break;
-            case 2:
-            break;
-          case 3:
-            this.setState({ ImageRight: Image[0].spaceBetween.correct });
-            break;
-          case 4:
-            break;
-          default:
-            break;
-        }
+      case 1:
+        this.setState({ ImageLeft: Image[0].spaceBetween.wrong })
+        this.setState({ styleCorrectImage: "correctAnswer" })
+        break;
+      case 2:
+        this.setState({ ImageEnd: Image[0].end.wrong })
+        this.setState({ styleCorrectImage: "correctAnswer" })
+        break;
+      case 3:
+        this.setState({ ImageCenter: Image[0].center.wrong })
+        this.setState({ styleCorrectImage: "correctAnswer" })
+        break;
+      default:
+        break;
+    }
   };
 
   nextpage = () => {
-    console.log("oi");
-    console.log({ page: this.state.page });
+
     this.setState({ page: this.state.page + 1 });
 
     switch (this.state.page) {
-    case 1:
-        this.setState({ styleWrong: ""});
-        this.setState({ ImageRight: '' });
+      case 1:
+        this.setState({ styleCorrectImage: "" })
+        this.setState({ styleWrongImage: "" })
         break;
       case 2:
-        this.setState({ styleWrong: ""});
+        this.setState({ styleCorrectImage: "" })
+        this.setState({ styleWrongImage: "" })
         break;
       case 3:
-        this.setState({ styleWrong: ""});
-        break;
-      case 4:
-        this.setState({ styleWrong: ""});
+        this.setState({ styleCorrectImage: "" })
+        this.setState({ styleWrongImage: "" })
         break;
       default:
+        
         break;
     }
   };
@@ -118,87 +119,100 @@ class JogoContent extends React.Component {
     return (
       <div>
         <Points teste={this.state.counter} />
-        
+
         {this.state.page == 1 && (
 
-        <>
+          <>
             <Titulo
               titulo="Estacione os carros nas vagas disponíveis com justify-content: center"
               tituloClass="tituloJogo"
             />
             <section className="game_container">
-              
 
               <Imagem
-                classImagem={this.state.styleWrong}
+                classImagem={this.state.styleWrongImage}
                 imagemIntroducao="JogoImagem"
                 imagemSrc={this.state.ImageLeft}
                 click={this.wrong}
               />
+
               <Imagem
-                classImagem={this.state.styleRight}
+                classImagem={this.state.styleCorrectImage}
                 imagemIntroducao="JogoImagem"
                 imagemSrc={this.state.ImageRight}
                 click={this.correct}
               />
-              </section>
-        </>    
-            )}
-        
+            </section>
+          </>
+        )}
+
         {this.state.page == 2 && (
-            <>
-                <Titulo
-                titulo="Estacione os carros nas vagas disponíveis com justify-content: start"
-                tituloClass="tituloJogo"
-                 />
+          <>
+            <Titulo
+              titulo="Estacione os carros nas vagas disponíveis com justify-content: start"
+              tituloClass="tituloJogo"
+            />
             <section className="game_container">
-                <Imagem
-                classImagem={this.state.styleRight}
+              <Imagem
+                classImagem={this.state.styleCorrectImage}
                 imagemIntroducao="JogoImagem"
                 imagemSrc={this.state.ImageStart}
                 click={this.correct}
-                />
-                <Imagem
-                classImagem={this.state.styleWrong}
+              />
+              <Imagem
+                classImagem={this.state.styleWrongImage}
                 imagemIntroducao="JogoImagem"
-                imagemSrc={Image[0].center.default}
+                imagemSrc={this.state.ImageEnd}
                 click={this.wrong}
-                />
-                </section>
-            </>
-             )}
+              />
+            </section>
+          </>
+        )}
 
         {this.state.page == 3 && (
-            <>
+          <>
             <Titulo
-                titulo="Estacione os carros nas vagas disponíveis com justify-content: space-between"
-                tituloClass="tituloJogo"
+              titulo="Estacione os carros nas vagas disponíveis com justify-content: space-between"
+              tituloClass="tituloJogo"
             />
             <section className="game_container">
 
               <Imagem
-                classImagem={this.state.styleWrong}
+                classImagem={this.state.styleCorrectImage}
                 imagemIntroducao="JogoImagem"
-                imagemSrc={Image[0].spaceBetween.default}
+                imagemSrc={this.state.ImageSpaceBetween}
                 click={this.correct}
-                />
+              />
 
               <Imagem
-                classImagem={this.state.styleRight}
+                classImagem={this.state.styleWrongImage}
                 imagemIntroducao="JogoImagem"
-                imagemSrc={Image[0].end.default}
+                imagemSrc={this.state.ImageCenter}
                 click={this.wrong}
-                />
+              />
             </section>
-            </>
-             )}
-       
+          </>
+        )}
 
-        <div className="button_container">
-          <button className="button_introducao" onClick={this.nextpage}>
-            próximo
-          </button>
+        {this.state.page == 4 && (
+          <>
+         
+          </>
+        )}
+
+        <section className={this.state.changeDisplay}>
+
+          <div className="button_container">
+            <Button 
+          
+            classButton="button_introducao" 
+            click={this.nextpage}
+            nomeDoButton="PRÓXIMO DESAFIO"
+              />
         </div>
+        
+        </section>
+        
       </div>
     );
   }

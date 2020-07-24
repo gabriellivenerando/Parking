@@ -13,9 +13,12 @@ section{
     margin-bottom: 50px;
 }
 
+.newDisplay{
+    display: none;
+}
 
 
-.wrongAnswer, .rightAnswer{
+.wrongAnswer, .correctAnswer{
     opacity: 0.4
 }
 
