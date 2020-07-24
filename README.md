@@ -18,7 +18,7 @@
 
 ### Deploy da Aplicação com Netlify: :dash:
 
-
+:pushpin: [Car Parking](https://car-parking.netlify.app/)
 
 
 
@@ -27,4 +27,9 @@
 :pushpin: React.js 
 
 :pushpin: React Router Dom
+
+:pushpin: [React.js](https://pt-br.reactjs.org/docs/getting-started.html)
+
+:pushpin: [React Router Dom](https://reactrouter.com/web/guides/quick-start)
+
 
