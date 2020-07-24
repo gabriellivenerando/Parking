@@ -15,7 +15,7 @@
 .instrucao_imagens{
     display:flex;
     justify-content: space-between;
-    width: 88%;
+    width: 73%;
     margin: 50px auto 40px auto;
 }
 
@@ -68,12 +68,12 @@
         margin-bottom: 17px;
         width: 100%;
         font-size: 22px;
-        text-align: justify;
+        text-align: center;
     }
 
     .instrucao_imagens{
         flex-direction: column;
-        /* width: 80%; */
+        width: 88%
     }
 
     .presentationParking_container{
