@@ -3,7 +3,7 @@
 
 ### Descrição do Projeto :open_file_folder:
 
-<p align="justify"> Projeto final para Bootcamp {Reprograma}. </p>
+<p align="justify"> Projeto final para Bootcamp {Reprograma}. Com intuito de auxiliar nos estudos.</p>
 
 
 
@@ -24,9 +24,6 @@
 
 
 ### Linguagens, dependencias e libs utilizadas :books:
-:pushpin: React.js 
-
-:pushpin: React Router Dom
 
 :pushpin: [React.js](https://pt-br.reactjs.org/docs/getting-started.html)
 
