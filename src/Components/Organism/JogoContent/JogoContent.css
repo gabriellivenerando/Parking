@@ -1,8 +1,36 @@
 .tituloJogo{
     text-align: center;
-    width: 75%;
+    width: 72%;
     margin: auto;
     font-size: 20px;
+}
+
+.testetitulo{
+    width: 72%;
+    margin: auto;
+    text-align: center;
+   
+}
+
+.testetitulo_sb{
+    width: 63%;
+    margin: auto;
+    text-align: center;
+}
+
+.testetitulo_sb > span{
+    color: #4BC999
+}
+
+
+
+.testetitulo > span{
+    color: #4BC999
+}
+
+
+.tituloClass{
+    width: 70%;
 }
 
 section{
@@ -13,9 +41,25 @@ section{
     margin-bottom: 50px;
 }
 
-.title_game{
+/* .title_game{
     color:red
+} */
+
+.result{
+    margin: 200px auto auto auto;
+    width: 50%;
 }
+
+.result > p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.result > p > span{
+   color: #34ABE0;
+}
+
 
 
 .wrongAnswer, .correctAnswer{
@@ -32,7 +76,7 @@ section{
     }
 
     .game_container > div{
-        width: 412px;
+        width: 364px;
     }
 
     .JogoImagem{

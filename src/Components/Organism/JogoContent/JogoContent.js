@@ -110,12 +110,14 @@ class JogoContent extends React.Component {
         this.setState({ styleWrongImage: "" })
         break;
       default:
-        
+
         break;
     }
   };
 
   render() {
+ 
+
     return (
       <div>
         <Points teste={this.state.counter} />
@@ -123,10 +125,11 @@ class JogoContent extends React.Component {
         {this.state.page == 1 && (
 
           <>
-            <Titulo
+            {/* <Titulo
               titulo="Estacione os carros nas vagas disponíveis com justify-content: center"
               tituloClass="tituloJogo"
-            />
+            /> */}
+            <h2 className="testetitulo">Estacione os carros nas vagas disponíveis com <span>justify-content: center</span></h2>
             <section className="game_container">
 
               <Imagem
@@ -148,10 +151,11 @@ class JogoContent extends React.Component {
 
         {this.state.page == 2 && (
           <>
-            <Titulo
+            {/* <Titulo
               titulo="Estacione os carros nas vagas disponíveis com justify-content: start"
               tituloClass="tituloJogo"
-            />
+            /> */}
+            <h2 className="testetitulo">Estacione os carros nas vagas disponíveis com <span>justify-content: start</span></h2>
             <section className="game_container">
               <Imagem
                 classImagem={this.state.styleCorrectImage}
@@ -171,10 +175,11 @@ class JogoContent extends React.Component {
 
         {this.state.page == 3 && (
           <>
-            <Titulo
+            {/* <Titulo
               titulo="Estacione os carros nas vagas disponíveis com justify-content: space-between"
               tituloClass="tituloJogo"
-            />
+            /> */}
+            <h2 className="testetitulo_sb">Estacione os carros nas vagas disponíveis com <span>justify-content: space-between</span></h2>
             <section className="game_container">
 
               <Imagem
@@ -196,7 +201,9 @@ class JogoContent extends React.Component {
 
         {this.state.page == 4 && (
           <>
-         
+            <div className="result">
+              <p>Você fez um total de <span>{this.state.counter}</span> pontos!</p>
+            </div>
           </>
         )}
 
