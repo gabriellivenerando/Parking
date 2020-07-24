@@ -13,8 +13,8 @@ section{
     margin-bottom: 50px;
 }
 
-.newDisplay{
-    display: none;
+.title_game{
+    color:red
 }
 
 
@@ -27,8 +27,20 @@ section{
 @media  screen and (max-width: 950px) {
     .game_container{
         flex-direction: column;
-        width: 69%;
+        width: 409px;
         margin: auto
+    }
+
+    .game_container > div{
+        width: 412px;
+    }
+
+    .JogoImagem{
+        max-width: 576px;
+    }
+
+    .tituloJogo{
+        width: 100%;
     }
     
 

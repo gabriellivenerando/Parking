@@ -7,13 +7,22 @@
 
 
 .coins_container{
-    width: 62px;
-    height: 61px;
+    width: 41px;
+}
+
+.coins_container > img{
+    max-width: 40px;
 }
 
 .points{
-    width: 100px;
-    height: 43px;
-    margin-top: 8px;
+    width: 47px;
+    height: 24px;
+    margin-top: 7px;
     background-color: #FFFF;
+    border-radius: 12px;
+}
+
+.points > p{
+    text-align: center;
+    font-weight: bold;
 }
