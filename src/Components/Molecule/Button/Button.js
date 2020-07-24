@@ -7,7 +7,7 @@ const Button = (props)=>{
     return(
         <div className="button_container">
              <Link to={props.path}>
-                <button className={props.classButton}>{props.nomeDoButton}</button>
+                <button className={props.classButton} onClick={props.click}>{props.nomeDoButton}</button>
             </Link>
 
             </div>

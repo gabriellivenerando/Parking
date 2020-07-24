@@ -1,5 +1,8 @@
 .tituloJogo{
     text-align: center;
+    width: 75%;
+    margin: auto;
+    font-size: 20px;
 }
 
 section{
@@ -16,3 +19,14 @@ section{
     opacity: 0.4
 }
 
+
+
+@media  screen and (max-width: 950px) {
+    .game_container{
+        flex-direction: column;
+        width: 69%;
+        margin: auto
+    }
+    
+
+}
